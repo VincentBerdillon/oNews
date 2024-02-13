@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>oNews, le journal des étudiants d'O'clock</title>
+
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="header header--contact">
+        <a class="header__home" href="../index.html">
+            <div class="header__top">
+              <img class="header__logo" src="../images/onews.svg" alt="oNews" />
+
+              <h1 class="header__title">O'clock students news</h1>
+            </div>
+        </a>
+
+        <section class="header__intro">
+            <h2 class="header__intro-title">
+                Say a word
+                <span class="header__intro-subtitle">contact us</span>
+            </h2>
+
+            <p class="header__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Perferendis nostrum ab quia ex quod iure labore molestiae
+                tempore quam atque eius hic, nemo voluptate iusto?
+            </p>
+        </section>
+
+        <nav class="header__nav">
+            <ul>
+                <li class="header__item"><a class="header__link" href="#plan">Plan du site</a></li>
+                <li class="header__item"><a class="header__link" href="#mentions">Mentions légales</a></li>
+                <li class="header__item"><a class="header__link" href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <h2 class="main__title main__title_border">Contact</h2>
+
+        <section class="contact__content page__contact">
+           
+            <form class="contact__form" action="" method="post">
+
+                <fieldset class="fieldset__box">
+
+                    <div class="container__input">
+                        <legend class="legend">Identité</legend>
+                    
+                        <div class="input__radio">
+                            <p class="radio__text"> Je suis </p>                
+                            
+                            <div class="radio__sexe">
+                                <p class="radio__info"> &nbsp;Femme&nbsp;
+                                <input type="radio" name="sexe" value="femme" required>
+                                </p>
+                                <p class="radio__info"> &nbsp;Homme&nbsp;
+                                    <input type="radio" name="sexe" value="homme" required>
+                                </p>
+                                <p class="radio__info"> &nbsp;&nbsp;Autre&nbsp;&nbsp;
+                                    <input type="radio" name="sexe" value="autre" required>
+                                </p>
+                            </div>                     
+                        </div>
+
+                        <div class="input__line">
+                            <label class="line__label" for="first-name">Mon prénom est</label>
+                            <input class="line__info" type="text" id="first-name" name="identity" placeholder="Prénom" required minlength="2" maxlength="50" pattern="[A-Za-z]+" >
+                        </div>
+
+                        <div class="input__line">
+                            <label class="line__label" for="last-name">Et mon nom est</label>
+                            <input class="line__info" type="text" id="last-name" name="identity" placeholder="Nom" required minlength="2" maxlength="50" pattern="[A-Za-z]+">
+                        </div>
+
+                                     
+                        <div class="input__line">
+                         <label class="line__label" for="site">J'ai connu ce site grâce à</label>
+                            <select class="line__select" name="from" id="site" required>
+                             <option value="">Choisir</option>
+                                <option value="fb">Facebook</option>
+                                <option value="insta">Instagram</option>
+                                <option value="tw">twitter</option>
+                             </select>
+                        </div> 
+                    </div> 
+
+                </fieldset>
+
+                <fieldset class="fieldset__box">
+
+                    <div class="container__input">
+                        <legend class="legend">Message</legend>
+
+                        <div class="input__line">
+                            <label class="line__label" for="email">Répondez-moi via </label>
+                            <input class="line__info" type="email" name="email" id="email" placeholder="adresse e-mail" required>
+                        </div>
+
+                        <div class="input__line">
+                            <label class="line__label" for="message">Je voulais vous dire que</label>
+                            <textarea class="line__textarea" id="message" name="message" placeholder="Votre message" required maxlength="500"></textarea>
+                        </div>
+
+                        <div class="input__line">
+                            <label class="line__label" for="file">Et vous montrer ça aussi</label>
+                             <input class="line__browse" id="file" type="file" name="photo" accept=".jpeg, .png">
+                        </div>
+
+                    </div>
+                </fieldset>
+
+                <fieldset class="fieldset__box">
+                    <div class="container__input">
+                        <div class="input__check">
+                        <label class="check__label" for="check">Je confirme que ces informations sont vraies</label>
+                        <input class="check__box" id="check" type="checkbox" name="agree" value="oui" required>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <button class="contact__button" type="submit">Envoyer</button>
+
+            </form>
+
+        </section>
+    </main>
+</body>
+</html>
